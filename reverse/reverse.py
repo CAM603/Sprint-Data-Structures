@@ -60,6 +60,8 @@ class LinkedList:
 
         # Recursive version
         # If node is none, don't do anything
+        # This will happen when we reach the tail node
+        # and try to invoke reverse_list with its next_node (which is None)
         if node is None:
             return
         # If the node is the tail, set it to the head
